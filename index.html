@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Rabia Khan | AI and Recommender Systems</title>
+<meta name="description" content="Homepage of Dr. Rabia Khan, Assistant Professor of Artificial Intelligence at NUST. Research in recommender systems, graph learning and applied AI.">
+<style>
+:root{
+  --bg:#F7F8FA; --card:#FFFFFF; --ink:#1B2430; --muted:#566273; --line:#DDE2E8;
+  --accent:#2B5A87; --accent-soft:#E6EEF6;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#10161D; --card:#171F28; --ink:#E8EDF2; --muted:#9AA7B6; --line:#2A3542;
+  --accent:#7FB0DE; --accent-soft:#1D2B3A;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover,a:focus-visible{border-bottom-color:var(--accent)}
+.wrap{max-width:820px;margin:0 auto;padding:40px 20px 64px}
+header{margin-bottom:28px}
+h1{font-size:2.1rem;line-height:1.2;margin:0 0 4px;letter-spacing:-.01em}
+.role{color:var(--muted);margin:0 0 14px;font-size:1.05rem}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;font:15px system-ui,sans-serif}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px;margin:24px 0 8px;padding:10px 0;border-block:1px solid var(--line);font:15px system-ui,sans-serif}
+section{margin-top:34px}
+h2{font:700 13px system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+p{margin:0 0 12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none;font:14px system-ui,sans-serif}
+.tags li{background:var(--accent-soft);border-radius:999px;padding:4px 12px}
+.pub{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.pub h3{font-size:1.05rem;line-height:1.35;margin:0 0 4px}
+.meta{color:var(--muted);font:14px system-ui,sans-serif;margin:0 0 6px}
+.res{font-size:.95rem;margin:0 0 8px}
+.pl{font:14px system-ui,sans-serif;display:flex;gap:14px;flex-wrap:wrap}
+.proj{border-inline-start:3px solid var(--accent);padding-inline-start:14px;margin-bottom:18px}
+.proj h3{margin:0 0 2px;font-size:1.05rem}
+.proj p{margin:0 0 6px}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font:13px system-ui,sans-serif}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Dr. Rabia Khan</h1>
+  <p class="role">Assistant Professor of Artificial Intelligence, National University of Sciences and Technology (NUST), Pakistan</p>
+  <div class="links">
+    <a href="mailto:rabia.khan@mcs.nust.edu.pk">rabia.khan@mcs.nust.edu.pk</a>
+    <a href="https://scholar.google.com/citations?user=fU-uI_8AAAAJ">Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-2718-6488">ORCID</a>
+    <a href="https://pk.linkedin.com/in/dr-rabia-khan-1b772b3b9">LinkedIn</a>
+    <a href="cv.pdf">CV (PDF)</a>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <a href="#about">About</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#code">Code</a><a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I am an AI researcher and Assistant Professor at NUST. I completed my PhD in Computer Science in 2025 with a thesis on cross-domain recommendation using deep learning. My work focuses on recommender systems that stay accurate when data is sparse or a user is new, using graph neural networks, contrastive representation learning and review sentiment.</p>
+  <p>I also work on applied AI: vision-language models for Urdu Nastaliq text, AI-assisted credit-risk decision support, and data pipelines for humanitarian case management.</p>
+  <ul class="tags" aria-label="Research interests">
+    <li>Recommender systems</li><li>Cross-domain recommendation</li><li>Graph machine learning</li><li>Contrastive learning</li><li>Large-scale personalization</li><li>Multimodal and generative AI</li><li>Trustworthy AI</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Selected publications</h2>
+
+  <article class="pub">
+    <h3>Cross-domain recommendation framework for enhanced personalization through contrastive learning</h3>
+    <p class="meta">R. Khan, N. Iltaf, R. Latif, N. S. M. Jamail. <i>The Journal of Supercomputing</i>, Springer, 82, 55 (2026).</p>
+    <p class="res">A contrastive, attention-based framework for transferring preferences from a rich domain to a sparse one. Hit Rate@10 of 0.543 (Movies to Books) and 0.542 (Movies to Music) on Amazon data, against 0.376 and 0.436 for the strongest of seven baselines.</p>
+    <div class="pl"><a href="https://doi.org/10.1007/s11227-025-08187-6">DOI</a><span>Code: available on request</span></div>
+  </article>
+
+  <article class="pub">
+    <h3>Cross-Domain Recommendation based on Metadata using Graph Convolution Networks</h3>
+    <p class="meta">R. Khan, N. Iltaf, R. Latif et al. <i>IEEE Access</i>, vol. 11, pp. 90724-90738, 2023.</p>
+    <div class="pl"><a href="https://doi.org/10.1109/ACCESS.2023.3307015">DOI</a><span>Code: available on request</span></div>
+  </article>
+
+  <article class="pub">
+    <h3>Enhancing Cross-Domain Recommendations through User Convergence and Contrastive Learning</h3>
+    <p class="meta">R. Khan, N. Iltaf. 28th IEEE International Conference on Advanced Communications Technology (ICACT), Korea, January 2026.</p>
+  </article>
+
+  <article class="pub">
+    <h3>Metadata Based Cross-Domain Recommender Framework using Neighbourhood Mapping</h3>
+    <p class="meta">R. Khan, N. Iltaf, F. Rehman et al. IEEE Asia Pacific Conference on Computer Science and Data Engineering (CSDE), Fiji, December 2023.</p>
+  </article>
+
+  <p><a href="https://scholar.google.com/citations?user=fU-uI_8AAAAJ">Full list on Google Scholar</a></p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="proj">
+    <h3>Cross-domain recommendation with contrastive learning</h3>
+    <p>BERT behaviour encoder, contrastive self-supervised autoencoder and multi-head attention fusion, with RoBERTa sentiment features. Contrastive learning raised Hit Rate@10 from 0.391 to 0.454 on Movies to Books; the full model reached 0.547.</p>
+  </div>
+  <div class="proj">
+    <h3>MicroRisk AI: credit-risk decision support</h3>
+    <p>An AI-assisted decision-support design for microfinance with explainability, fairness checks, drift monitoring and human loan-officer oversight.</p>
+  </div>
+  <div class="proj">
+    <h3>CaseFlow: protection monitoring and referral data pipeline</h3>
+    <p>KOBO form collection, automated Python and SQL cleaning, a layered data model and dashboards for case monitoring.</p>
+  </div>
+  <div class="proj">
+    <h3>Cross-disciplinary data integration platform</h3>
+    <p>A cloud ETL pipeline that unifies educational, environmental and healthcare metadata in a Neo4j graph database.</p>
+  </div>
+</section>
+
+<section id="code">
+  <h2>Code</h2>
+  <p>Code for published work is available on request. Repositories will be linked here as they are released.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Department of Software Engineering, Military College of Signals, NUST, Rawalpindi, Pakistan.<br>
+  <a href="mailto:rabia.khan@mcs.nust.edu.pk">rabia.khan@mcs.nust.edu.pk</a></p>
+</section>
+
+<footer>&copy; 2026 Rabia Khan. Views expressed here are my own.</footer>
+</div>
+</body>
+</html>
