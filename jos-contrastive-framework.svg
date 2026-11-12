@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 390" role="img" aria-labelledby="t d">
+<title id="t">Conceptual overview of the contrastive-learning cross-domain recommendation framework</title>
+<desc id="d">Review and behaviour signals pass through a BERT behaviour encoder, then contrastive self-supervised autoencoder alignment, then attention-based fusion of shared and domain-specific embeddings, producing personalized target-domain recommendations.</desc>
+<defs>
+ <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#ccfbf1"/></linearGradient>
+ <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2a9d8f"/></marker>
+ <style>
+ .h{font:700 19px Inter,Arial,sans-serif;fill:#102a43}.s{font:14px Inter,Arial,sans-serif;fill:#334e68}
+ .box{fill:#fff;stroke:#2a9d8f;stroke-width:2;rx:15}.pill{fill:#e0f2fe;stroke:#93c5fd;stroke-width:1.3;rx:10}
+ .arrow{stroke:#2a9d8f;stroke-width:3;fill:none;marker-end:url(#a)}
+ </style>
+</defs>
+<rect x="12" y="12" width="1076" height="366" rx="22" fill="#f8fafc" stroke="#dbe4ee"/>
+<rect class="pill" x="36" y="48" width="160" height="46"/><text class="h" x="116" y="76" text-anchor="middle">Reviews</text>
+<rect class="pill" x="36" y="112" width="160" height="46"/><text class="h" x="116" y="140" text-anchor="middle">User / item IDs</text>
+<rect class="pill" x="36" y="176" width="160" height="46"/><text class="h" x="116" y="204" text-anchor="middle">Domain IDs</text>
+<rect class="pill" x="36" y="240" width="160" height="46"/><text class="h" x="116" y="268" text-anchor="middle">Review sentiment</text>
+<path class="arrow" d="M198 166 H235"/>
+<rect class="box" x="240" y="80" width="220" height="180"/>
+<text class="h" x="350" y="116" text-anchor="middle">BERT-based</text><text class="h" x="350" y="140" text-anchor="middle">behaviour encoder</text>
+<text class="s" x="350" y="178" text-anchor="middle">Opinion-token masking</text><text class="s" x="350" y="202" text-anchor="middle">Contextual review encoding</text><text class="s" x="350" y="226" text-anchor="middle">Sentiment-enriched embeddings</text>
+<path class="arrow" d="M462 170 H500"/>
+<rect class="box" x="505" y="80" width="220" height="180"/>
+<text class="h" x="615" y="116" text-anchor="middle">Contrastive self-</text><text class="h" x="615" y="140" text-anchor="middle">supervised autoencoder</text>
+<text class="s" x="615" y="178" text-anchor="middle">Latent user representations</text><text class="s" x="615" y="202" text-anchor="middle">Reconstruction objective</text><text class="s" x="615" y="226" text-anchor="middle">Cross-domain alignment</text>
+<path class="arrow" d="M727 170 H765"/>
+<rect class="box" x="770" y="80" width="180" height="180"/>
+<text class="h" x="860" y="116" text-anchor="middle">Multi-head</text><text class="h" x="860" y="140" text-anchor="middle">attention fusion</text>
+<text class="s" x="860" y="178" text-anchor="middle">Shared features</text><text class="s" x="860" y="202" text-anchor="middle">Domain-specific features</text><text class="s" x="860" y="226" text-anchor="middle">Dynamic reweighting</text>
+<path class="arrow" d="M952 170 H984"/>
+<rect x="985" y="113" width="82" height="112" rx="14" fill="url(#g)" stroke="#2a9d8f" stroke-width="2"/>
+<text class="h" x="1026" y="153" text-anchor="middle">Target</text><text class="h" x="1026" y="177" text-anchor="middle">domain</text><text class="s" x="1026" y="199" text-anchor="middle">ranking</text>
+<text class="s" x="550" y="326" text-anchor="middle">Author-created conceptual schematic based on the paper's methodology; not a reproduced manuscript figure.</text>
+</svg>
