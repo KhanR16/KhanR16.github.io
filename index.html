@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Dr Rabia Khan — Assistant Professor of Artificial Intelligence at NUST. Research in cross-domain recommendation, graph learning and contrastive learning.">
+<meta name="description" content="Dr Rabia Khan — Assistant Professor of Artificial Intelligence at NUST. Research in cross-domain recommendation, graph learning, contrastive learning and low-resource Urdu OCR.">
 <title>Dr Rabia Khan | Artificial Intelligence & Research</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +35,7 @@ footer{background:var(--navy);color:#d9e6ef;padding:28px 0;font-size:12px}.foote
 <div class="nav-links" id="navLinks">
 <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
 </div></div></nav>
+
 <header class="hero" id="home"><div class="wrap hero-grid">
 <div><div class="eyebrow">Academic Portfolio · Artificial Intelligence</div>
 <h1>Dr. Rabia Khan</h1><h2>Assistant Professor of Artificial Intelligence</h2>
@@ -47,11 +49,12 @@ footer{background:var(--navy);color:#d9e6ef;padding:28px 0;font-size:12px}.foote
 <div class="about-grid"><div class="panel"><p style="margin-top:0">I completed my PhD in Computer Science at NUST, researching cross-domain recommendation using deep learning. My work investigates how information from richer domains, graph structure, user behaviour and review semantics can improve recommendations when target-domain interactions are limited.</p><p>I am interested in responsible and user-centred AI, particularly methods that improve representation quality, reduce negative transfer and support more reliable personalization.</p><div class="chips"><span class="chip">Artificial Intelligence</span><span class="chip">Machine Learning</span><span class="chip">Recommender Systems</span><span class="chip">Graph Learning</span><span class="chip">Contrastive Learning</span><span class="chip">NLP</span></div></div>
 <div class="facts"><div class="fact"><strong>PhD Computer Science</strong><span>NUST · 2018–2025</span></div><div class="fact"><strong>Current role</strong><span>Assistant Professor · NUST</span></div><div class="fact"><strong>Research focus</strong><span>Cross-domain recommendation</span></div><div class="fact"><strong>3MT Winner</strong><span>NUST ComTech · 2023</span></div></div></div></div></section>
 
-<section id="research" style="background:#edf3f7"><div class="wrap"><div class="section-head"><div class="kicker">Research themes</div><h2>Research Interests</h2><p>Research themes represented in the two featured publications below.</p></div>
+<section id="research" style="background:#edf3f7"><div class="wrap"><div class="section-head"><div class="kicker">Research themes</div><h2>Research Interests</h2><p>Research themes represented in my work on recommendation systems, graph learning and applied artificial intelligence.</p></div>
 <div class="two-col"><div class="panel"><h3 style="color:var(--navy);margin-top:0">Cross-domain personalization</h3><p style="font-size:13px;color:var(--muted)">Transfer user preference information from a richer source domain to a sparse target domain, while accounting for domain differences and cold-start users.</p></div><div class="panel"><h3 style="color:var(--navy);margin-top:0">Graph and representation learning</h3><p style="font-size:13px;color:var(--muted)">Model user–item interactions, semantic similarity and review-derived representations through graph convolution, contrastive objectives and attention-based fusion.</p></div></div></div></section>
 
-<section id="projects"><div class="wrap"><div class="section-head"><div class="kicker">Selected research</div><h2>Featured Projects</h2><p>Two peer-reviewed research projects, presented with their research questions, technical contributions and reported results.</p></div>
+<section id="projects"><div class="wrap"><div class="section-head"><div class="kicker">Selected research</div><h2>Featured Projects</h2><p>Selected research projects and student-supervised work, highlighting research contributions, technical development and ongoing scholarly publications.</p></div>
 <div class="projects">
+
 <article class="project" id="mdgcn">
 <div class="project-top"><span class="tag">IEEE Access · 2023</span><h3>Cross-Domain Recommendation Based on Metadata Using Graph Convolution Networks</h3><div class="venue">MD-GCN · DOI: 10.1109/ACCESS.2023.3307015</div></div>
 <div class="project-body">
@@ -73,12 +76,48 @@ footer{background:var(--navy);color:#d9e6ef;padding:28px 0;font-size:12px}.foote
 <h4>Evaluation</h4><p>On Amazon cross-domain tasks, the proposed framework reports HR@50 improvements of 56.8% for Movies → Books and 39.1% for Movies → Music over GA-MTCDR. The ablation analysis also examines the contributions of contrastive learning, attention-based fusion and sentiment information.</p>
 <div class="project-links"><a class="text-link" href="https://doi.org/10.1007/s11227-025-08187-6" target="_blank" rel="noopener">Read Journal of Supercomputing paper ↗</a><a class="text-link" href="#publications">Publication details ↓</a></div>
 </div>
-<div class="project-art"><img src="assets/jos-contrastive-framework.svg" alt="Author-created conceptual overview of the contrastive-learning recommendation framework"><div class="note">Workflow to generate user embedding integrates reconstruction and contrastive objectives to generate consistent
-and domain-invariant global user representation </div></div>
+<div class="project-art"><img src="assets/jos-contrastive-framework.svg" alt="Author-created conceptual overview of the contrastive-learning recommendation framework"><div class="note">Workflow to generate user embedding integrates reconstruction and contrastive objectives to generate consistent and domain-invariant global user representation</div></div>
 </article>
+
+<!-- NEW PROJECT: QUROCR -->
+<article class="project" id="qurocr">
+<div class="project-top">
+<span class="tag">Student Research · Under Review</span>
+<h3>QUROCR: Parameter-Efficient Vision-Language Models With Craft for Low-Resource Urdu Nastaliq OCR</h3>
+<div class="venue">Student-Supervised Research Project · Springer Journal Submission</div>
+</div>
+
+<div class="project-body">
+<p>QUROCR explores parameter-efficient vision-language models for optical character recognition (OCR) of low-resource Urdu Nastaliq script. The project combines CRAFT-based text detection, reading-order reconstruction and vision-language model adaptation to address the challenges of complex Urdu script recognition, including ligatures, diacritics and character-level variations.</p>
+
+<h4>Technical Approach</h4>
+<ul>
+<li>CRAFT-based text-region detection for Urdu Nastaliq document images.</li>
+<li>Reading-order reconstruction to support the complex layout and flow of Nastaliq script.</li>
+<li>Parameter-efficient fine-tuning of a vision-language model for Urdu OCR.</li>
+<li>Focus on challenging script features, including ligatures, diacritics and Arabic-Indic numerals.</li>
+</ul>
+
+<h4>Academic Supervision</h4>
+<ul>
+<li><strong>Project Supervisor:</strong> Dr. Rabia Khan</li>
+<li><strong>Student Developer:</strong> Talha Kausar</li>
+<li><strong>Institution:</strong> NUST, Pakistan</li>
+</ul>
+
+<h4>Research Publication</h4>
+<p>A research manuscript associated with this project is currently under peer review at <em>Neural Computing and Applications</em>, Springer.</p>
+
+<div class="project-links">
+<a class="text-link" href="https://github.com/KhanR16/QUROCR-Parameter-Efficient-Vision-Language-Models-With-Craft-for-Low-Resource-Urdu-Nastaliq-OCR" target="_blank" rel="noopener">View GitHub Repository ↗</a>
+</div>
+</div>
+</article>
+<!-- END QUROCR PROJECT -->
+
 </div></div></section>
 
-<section id="publications" style="background:#edf3f7"><div class="wrap"><div class="section-head"><div class="kicker">Peer-reviewed work</div><h2>Selected Publications</h2><p>Publication records and DOI links for the two featured research projects.</p></div>
+<section id="publications" style="background:#edf3f7"><div class="wrap"><div class="section-head"><div class="kicker">Peer-reviewed work</div><h2>Selected Publications</h2><p>Selected published research and scholarly contributions.</p></div>
 <div class="publication-list">
 <div class="publication"><div class="year">2026</div><div><h3>Cross-Domain Recommendation Framework for Enhanced Personalization through Contrastive Learning</h3><p><strong>Rabia Khan</strong>, Naima Iltaf, Rabia Latif, and Nor Shahida Mohd Jamail. <em>The Journal of Supercomputing</em>, 82, Article 55. <a href="https://doi.org/10.1007/s11227-025-08187-6" target="_blank" rel="noopener">https://doi.org/10.1007/s11227-025-08187-6</a></p></div></div>
 <div class="publication"><div class="year">2023</div><div><h3>CrossDomain Recommendation Based on MetaData Using Graph Convolution Networks</h3><p><strong>Rabia Khan</strong>, Naima Iltaf, Rabia Latif, and Nor Shahida Mohd Jamail. <em>IEEE Access</em>, vol. 11, pp. 90724–90738. <a href="https://doi.org/10.1109/ACCESS.2023.3307015" target="_blank" rel="noopener">https://doi.org/10.1109/ACCESS.2023.3307015</a></p></div></div>
@@ -106,10 +145,12 @@ and domain-invariant global user representation </div></div>
 <div class="contact-item"><strong>LinkedIn</strong><a href="https://pk.linkedin.com/in/dr-rabia-khan-1b772b3b9" target="_blank" rel="noopener">Professional profile</a></div>
 <div class="contact-item"><strong>Curriculum Vitae</strong><a href="Rabia_Khan_CV.pdf" target="_blank" rel="noopener">Download CV</a></div>
 </div></div></div></section>
+
 <footer><div class="wrap footer-inner"><span>© 2026 Dr. Rabia Khan · Academic Portfolio</span><span>Artificial Intelligence · Recommender Systems · Graph Learning</span></div></footer>
 <script>
 const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
 menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
 </script>
-</body></html>
+</body>
+</html>
